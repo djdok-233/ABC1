@@ -1,0 +1,20 @@
+class Library:
+
+    def __init__(self):
+        self.books = []
+        self.no_of_books = 0
+
+    def add_book(self, book):
+        self.books.append(book)
+        self.no_of_books = len(self.books)
+
+    def show_info(self):
+        print(f"The books are {self.books} and the number of books: {self.no_of_books}")
+        for book in self.books:
+            print(book)
+
+L1 = Library()
+L1.add_book("Harry Potter The Half-Blood Prince")
+L1.add_book("Harry Potter The Chambers of Secret")
+
+L1.show_info()
